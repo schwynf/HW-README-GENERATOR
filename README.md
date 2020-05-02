@@ -2,5 +2,5 @@
 
 
 <video width="400" controls>
-  <source src="./screen.webm" type="video/mp4">
+  <source src="./screen.mp4" type="video/mp4">
 </video>
