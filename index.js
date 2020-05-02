@@ -54,10 +54,13 @@ inquirer
         header = "# "+ data.repoTitle + "\n" + "\n";
         title(header);
         setTimeout(function(){
+          links("<ul><li href=\"d\">Description</li><li>Installation</li></ul> \n \n");
+        },50);
+        setTimeout(function(){
           section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?);" + "\n \n");
         },50);
         setTimeout(function(){
-          summary("## Description \n" + data.repoDescript);
+          summary("<span id=\"d\">## Description</span> \n" + data.repoDescript);
         },60);
       }
     }).catch((error) => {
@@ -81,6 +84,15 @@ inquirer
     });
   }
   let summary =  (e) => {
+    fs.appendFile("schwyn.md", e, function (error) {
+      if (error) {
+        return console.log(error);
+      }
+      console.log("summary works");
+    });
+  }
+  let links =  (e) => {
+
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
         return console.log(error);
