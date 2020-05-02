@@ -1,0 +1,24 @@
+{
+  "name": "HW-README-GENERATOR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwynf/HW-README-GENERATOR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schwynf/HW-README-GENERATOR/issues"
+  },
+  "homepage": "https://github.com/schwynf/HW-README-GENERATOR#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.1.0"
+  }
+}
