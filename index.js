@@ -57,7 +57,7 @@ inquirer
           links("<ul><li><a href=\"#d\">Description</a></li><li>Installation</li></ul> \n \n");
         },50);
         setTimeout(function(){
-          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?);" + "\n \n");
+          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]"+obj.data[0].actor.avatar_url + "\n \n");
         },50);
         setTimeout(function(){
           summary("## Description " + "<span id=\"d\"></span> \n" + data.repoDescript);
