@@ -1,3 +1,3 @@
 # HW-README-GENERATOR
 
-![](./Trivia-Pro.jpg);
+![](./https://avatars.githubusercontent.com/u/60010868?);
