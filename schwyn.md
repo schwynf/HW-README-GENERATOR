@@ -1,9 +1,9 @@
-## sdsd
+# Repo
 
-# Author info 
- Email: schwynf@gmail.com<br>
- Name: Schwyn Francis
- Profile Picture: https://avatars.githubusercontent.com/u/59147321?
+## Author info 
+ Email: youngphil9@gmail.com<br>
+ Name: Philip Hurst<br>
+ Profile Picture: https://avatars.githubusercontent.com/u/60010868?
  
-# Description 
-fdfd
+## Description 
+Generating a repo

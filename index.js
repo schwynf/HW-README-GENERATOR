@@ -51,13 +51,13 @@ inquirer
         console.log(JSON.stringify(obj.data[0].payload.commits[0].author.email));
         console.log(obj.data[0].payload.commits[0].author.name);
         console.log(obj.data[0].actor.avatar_url);
-        header = "## "+ data.repoTitle + "\n" + "\n";
+        header = "# "+ data.repoTitle + "\n" + "\n";
         title(header);
         setTimeout(function(){
-          section1("# Author info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "\n Profile Picture: "+ obj.data[0].actor.avatar_url + "\n \n");
+          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: "+ obj.data[0].actor.avatar_url + "\n \n");
         },50);
         setTimeout(function(){
-          summary("# Description \n" + data.repoDescript);
+          summary("## Description \n" + data.repoDescript);
         },60);
       }
     }).catch((error) => {
