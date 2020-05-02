@@ -1,3 +1,3 @@
 # HW-README-GENERATOR
 
-![](./https://avatars.githubusercontent.com/u/60010868?);
+![](https://avatars.githubusercontent.com/u/60010868?);
