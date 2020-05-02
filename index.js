@@ -54,7 +54,7 @@ inquirer
         header = "# "+ data.repoTitle + "\n" + "\n";
         title(header);
         setTimeout(function(){
-          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: "+ obj.data[0].actor.avatar_url + "\n \n");
+          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?);" + "\n \n");
         },50);
         setTimeout(function(){
           summary("## Description \n" + data.repoDescript);

@@ -1,9 +1,9 @@
-# Repo
+# dd
 
-## Author info 
+## Author Info 
  Email: youngphil9@gmail.com<br>
  Name: Philip Hurst<br>
- Profile Picture: https://avatars.githubusercontent.com/u/60010868?
+ Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?);
  
 ## Description 
-Generating a repo
+ss
