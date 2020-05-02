@@ -31,7 +31,7 @@ inquirer
     console.log(data.repoTitle);
     axios.get(queryUrl).then((obj) => {
       // if user name is  not found
-      if (obj.data[3] === undefined) {
+      if (obj.data[0].payload.action === "started") {
         console.log("Sorry I cant find your info using your Git Hub User Name");
         inquirer.prompt({
           message: "Enter your name",
@@ -48,13 +48,13 @@ inquirer
         })
       } else {
         console.log("User name found in database");
-        console.log(JSON.stringify(obj.data[2].payload.commits[0].author.email));
-        console.log(obj.data[2].payload.commits[0].author.name);
+        console.log(JSON.stringify(obj.data[0].payload.commits[0].author.email));
+        console.log(obj.data[0].payload.commits[0].author.name);
         console.log(obj.data[0].actor.avatar_url);
         header = "## "+ data.repoTitle + "\n" + "\n";
         title(header);
         setTimeout(function(){
-          section1("# Author info \n Email: "+ obj.data[2].payload.commits[0].author.email + "\n Name: " + obj.data[2].payload.commits[0].author.name + "\n Profile Picture: "+ obj.data[0].actor.avatar_url + "\n \n");
+          section1("# Author info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "\n Profile Picture: "+ obj.data[0].actor.avatar_url + "\n \n");
         },50);
         setTimeout(function(){
           summary("# Description \n" + data.repoDescript);
