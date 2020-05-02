@@ -54,13 +54,13 @@ inquirer
         header = "# "+ data.repoTitle + "\n" + "\n";
         title(header);
         setTimeout(function(){
-          links("<ul><li href=\"d\">Description</li><li>Installation</li></ul> \n \n");
+          links("<ul><li><a href=\"d\">Description</a></li><li>Installation</li></ul> \n \n");
         },50);
         setTimeout(function(){
           section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?);" + "\n \n");
         },50);
         setTimeout(function(){
-          summary("<span id=\"d\">## Description</span> \n" + data.repoDescript);
+          summary("## Description " + "<span id=\"d\"></span> \n" + data.repoDescript);
         },60);
       }
     }).catch((error) => {
