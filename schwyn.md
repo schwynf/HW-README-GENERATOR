@@ -1,16 +1,16 @@
-# repo
+# Repo
 
 ## Description <span id="d"></span> 
-generator
+De
  
 ## Table of Contents 
  <ul><li><a href="#i">Installation</a></li><li><a href="#u">Usage</a></li><li><a href="#l">License</a></li><li><a href="#c">Contributing</a></li><li><a href="#t">Tests</a></li></ul> 
  
 ## Installation <span id="i"></span> 
-sss 
+In 
  
 ## Usage <span id="u"></span> 
-ikd 
+US 
  
 ## License <span id="l"></span> 
 MIT 
