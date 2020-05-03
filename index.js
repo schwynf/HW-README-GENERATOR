@@ -23,6 +23,10 @@ inquirer
     name: "repoDescript"
   },
   {
+    message: "Usage",
+    name: "use"
+  },
+  {
     type: "checkbox",
     message: "What kind of License should your project have?",
     name: "stack",
@@ -45,19 +49,6 @@ inquirer
       // if user name is  not found
       if (obj.data[0].payload.action === "started") {
         console.log("Sorry I cant find your info using your Git Hub User Name");
-        inquirer.prompt({
-          message: "Enter your name",
-          name: "username2"
-        }).then(function(data){
-          console.log(data.username2);
-          header = "## Head" + "\n" + "\n" + data.username2;
-          fs.writeFile("schwyn.md", header, function (error) {
-            if (error) {
-              return console.log(error);
-            }
-            console.log("perfect");
-          });
-        })
       } else {
         console.log("User name found in database");
         console.log(JSON.stringify(obj.data[0].payload.commits[0].author.email));
@@ -72,11 +63,14 @@ inquirer
           links("## Table of Contents \n <ul><li><a href=\"#i\">Installation</a></li><li><a href=\"#u\">Usage</a></li><li><a href=\"#l\">License</a></li><li><a href=\"#c\">Contributing</a></li><li><a href=\"#t\">Tests</a></li></ul> \n \n");
         },50);
         setTimeout(function(){
-          license("## License " + "<span id=\"l\"></span> \n <br>"+ data.stack + " \n \n");
+          usage("## Usage " + "<span id=\"u\"></span> \n <br>"+ data.use + " \n \n");
         },60);
         setTimeout(function(){
-          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
+          license("## License " + "<span id=\"l\"></span> \n <br>"+ data.stack + " \n \n");
         },70);
+        setTimeout(function(){
+          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
+        },80);
       }
     }).catch((error) => {
       console.log(error)
@@ -119,13 +113,22 @@ inquirer
       console.log("summary works");
     });
   }
-
+  // license
   let license =  (e) => {
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
         return console.log(error);
       }
       console.log("summary works");
+    });
+  }
+  // Usage
+  let usage =  (e) => {
+    fs.appendFile("schwyn.md", e, function (error) {
+      if (error) {
+        return console.log(error);
+      }
+      console.log("usage works");
     });
   }
 
