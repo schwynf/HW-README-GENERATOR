@@ -21,6 +21,18 @@ inquirer
   {
     message: "Description of Repo",
     name: "repoDescript"
+  },
+  {
+    type: "checkbox",
+    message: "What kind of License should your project have?",
+    name: "stack",
+    choices: [
+      "MIT", 
+      "Apache 2.0", 
+      "GPL 3.0", 
+      "BSD 3.0",
+      "None"
+    ]
   }
 ])
   .then(function (data) {
@@ -62,6 +74,9 @@ inquirer
         setTimeout(function(){
           section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
         },60);
+        setTimeout(function(){
+          license("## License " + "<span id=\"l\"></span> \n <br>"+ data.stack + " \n \n");
+        },70);
       }
     }).catch((error) => {
       console.log(error)
@@ -97,6 +112,15 @@ inquirer
   }
   // links
   let links =  (e) => {
+    fs.appendFile("schwyn.md", e, function (error) {
+      if (error) {
+        return console.log(error);
+      }
+      console.log("summary works");
+    });
+  }
+
+  let license =  (e) => {
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
         return console.log(error);
