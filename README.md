@@ -16,19 +16,19 @@ This is a command line interface application that generates a README.md file dep
 ## Installation <span id="i"></span> 
 This is a command line application. To run application, use <code>npm install</code> in terminal to download node_modules folder. After download, type <code>node index.js</code> in terminal to begin application.
 <br>
-Video : <a href="https://schwynf.github.io/HW-README-GENERATOR/">Tutorial Video</a><br>
+Video : <a href="https://schwynf.github.io/HW-README-GENERATOR/" target="_blank">Tutorial Video</a><br>
  
 ## Usage <span id="u"></span> 
-README.md generator. <br>
+Creating a fast and organized README.md file. <br>
  
 ## License <span id="l"></span> 
-MIT 
+No
  
 ## Contributing <span id="c"></span> 
-no 
+No
  
 ## Tests <span id="t"></span> 
-no 
+No
  
 ## Author Info 
  Email: schwynf@gmail.com<br>
