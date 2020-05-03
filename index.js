@@ -57,7 +57,7 @@ inquirer
           summary("## Description " + "<span id=\"d\"></span> \n" + data.repoDescript+ "\n \n");
         },40);
         setTimeout(function(){
-          links("## Table of Contents \n <br> <ul><li><a href=\"#d\">Description</a></li><li>Installation</li><li><a href=\"#u\">Usage</a></li><li><a href=\"#l\">License</a></li><li><a href=\"#c\">Contributing</a></li><li><a href=\"#t\">Tests</a></li></ul> \n \n");
+          links("## Table of Contents \n <ul><li><a href=\"#d\">Description</a></li><li>Installation</li><li><a href=\"#u\">Usage</a></li><li><a href=\"#l\">License</a></li><li><a href=\"#c\">Contributing</a></li><li><a href=\"#t\">Tests</a></li></ul> \n \n");
         },50);
         setTimeout(function(){
           section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
@@ -67,6 +67,8 @@ inquirer
       console.log(error)
     })
   });
+
+  // title
   let title =  (header) => {
     fs.appendFile("schwyn.md", header, function (error) {
       if (error) {
@@ -75,6 +77,7 @@ inquirer
       console.log("title works");
     });
   }
+  // section1
   let section1 =  (e) => {
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
@@ -83,6 +86,7 @@ inquirer
       console.log("section1 works");
     });
   }
+  // summary
   let summary =  (e) => {
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
@@ -91,8 +95,8 @@ inquirer
       console.log("summary works");
     });
   }
+  // links
   let links =  (e) => {
-
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
         return console.log(error);
