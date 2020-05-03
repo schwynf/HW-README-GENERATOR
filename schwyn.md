@@ -1,25 +1,25 @@
-# dfdf
+# REPO-GENERATOR
 
 ## Description <span id="d"></span> 
-fdfd
+Create a README.md file
  
 ## Table of Contents 
  <ul><li><a href="#i">Installation</a></li><li><a href="#u">Usage</a></li><li><a href="#l">License</a></li><li><a href="#c">Contributing</a></li><li><a href="#t">Tests</a></li></ul> 
  
 ## Installation <span id="i"></span> 
-fdf 
+node_modules 
  
 ## Usage <span id="u"></span> 
-fd 
+Instant README.md file 
  
 ## License <span id="l"></span> 
- 
+None 
  
 ## Contributing <span id="c"></span> 
-fd 
+nope 
  
 ## Tests <span id="t"></span> 
-d 
+nope 
  
 ## Author Info 
  Email: schwynf@gmail.com<br>
