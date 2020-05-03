@@ -34,5 +34,3 @@ No
  Email: schwynf@gmail.com<br>
  Name: Schwyn Francis<br>
  Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/59147321?) 
-
-Video : <a href="https://schwynf.github.io/HW-README-GENERATOR/">Tutorial Video</a><br>
