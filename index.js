@@ -53,9 +53,9 @@ inquirer
   ])
   .then(function (data) {
     const queryUrl = `https://api.github.com/users/${data.username}/events/public`;
-    console.log(queryUrl);
-    console.log(data.username);
-    console.log(data.repoTitle);
+    // console.log(queryUrl);
+    // console.log(data.username);
+    // console.log(data.repoTitle);
     axios.get(queryUrl).then((obj) => {
       let email;
       let username2;
@@ -121,12 +121,16 @@ inquirer
   });
 
 // title
+let a= 0;
 let title = (header) => {
   fs.appendFile("schwyn.md", header, function (error) {
     if (error) {
       return console.log(error);
     }
-    console.log("title works");
+    if(a === 0){
+      console.log("READ.ME FILE HAS BEEN SUCCESSFULLY GENERATED!");
+      a++;
+    }
   });
 }
 

@@ -1,25 +1,25 @@
-# REPO-GENERATOR
+# Flash File
 
 ## Description <span id="d"></span> 
-Create a README.md file
+Creating a README.md file
  
 ## Table of Contents 
  <ul><li><a href="#i">Installation</a></li><li><a href="#u">Usage</a></li><li><a href="#l">License</a></li><li><a href="#c">Contributing</a></li><li><a href="#t">Tests</a></li></ul> 
  
 ## Installation <span id="i"></span> 
-node_modules 
+yes 
  
 ## Usage <span id="u"></span> 
-Instant README.md file 
+README.md generator. 
  
 ## License <span id="l"></span> 
-None 
+MIT 
  
 ## Contributing <span id="c"></span> 
-nope 
+no 
  
 ## Tests <span id="t"></span> 
-nope 
+no 
  
 ## Author Info 
  Email: schwynf@gmail.com<br>
