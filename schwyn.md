@@ -1,11 +1,12 @@
 # Repo
 
-<ul><li><a href="#d">Description</a></li><li>Installation</li></ul> 
- 
-## Author Info 
- Email: tom.black06007@gmail.com<br>
- Name: Tom Black<br>
- Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/47440447?) 
- 
 ## Description <span id="d"></span> 
 Generator
+ 
+<ul><li><a href="#d">Description</a></li><li>Installation</li><li><a href="#u">Usage</a></li><li><a href="#l">License</a></li><li><a href="#c">Contributing</a></li><li><a href="#t">Tests</a></li></ul> 
+ 
+## Author Info 
+ Email: youngphil9@gmail.com<br>
+ Name: Philip Hurst<br>
+ Profile Picture: <br> ![](https://avatars.githubusercontent.com/u/60010868?) 
+ 
