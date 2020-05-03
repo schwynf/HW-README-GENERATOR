@@ -81,7 +81,7 @@ inquirer
       // console.log(obj.data[0].payload.commits[0].author.name);
       // console.log(obj.data[0].actor.avatar_url);
       function start() {
-        header = "# " + data.repoTitle + "\n" + "\n";
+        header = "# " + data.repoTitle + "\n \n" + "![Repo Size](https://img.shields.io/github/repo-size/" + data.username + "/" + data.repoTitle +") <br> \n";
         title(header);
         setTimeout(() => {
           title("## Description " + "<span id=\"d\"></span> \n" + data.repoDescript + "\n \n");
