@@ -72,10 +72,10 @@ inquirer
           links("## Table of Contents \n <ul><li><a href=\"#i\">Installation</a></li><li><a href=\"#u\">Usage</a></li><li><a href=\"#l\">License</a></li><li><a href=\"#c\">Contributing</a></li><li><a href=\"#t\">Tests</a></li></ul> \n \n");
         },50);
         setTimeout(function(){
-          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
+          license("## License " + "<span id=\"l\"></span> \n <br>"+ data.stack + " \n \n");
         },60);
         setTimeout(function(){
-          license("## License " + "<span id=\"l\"></span> \n <br>"+ data.stack + " \n \n");
+          section1("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
         },70);
       }
     }).catch((error) => {
