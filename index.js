@@ -27,6 +27,10 @@ inquirer
     name: "use"
   },
   {
+    message: "Installation",
+    name: "install"
+  },
+  {
     type: "checkbox",
     message: "What kind of License should your project have?",
     name: "stack",
@@ -62,6 +66,9 @@ inquirer
         setTimeout(function(){
           links("## Table of Contents \n <ul><li><a href=\"#i\">Installation</a></li><li><a href=\"#u\">Usage</a></li><li><a href=\"#l\">License</a></li><li><a href=\"#c\">Contributing</a></li><li><a href=\"#t\">Tests</a></li></ul> \n \n");
         },50);
+        setTimeout(function(){
+          install("## Installation " + "<span id=\"i\"></span> \n <br>"+ "Video : <a href=\"index.html\">Tutorial Video</a><br>" + data.install + " \n \n");
+        },60);
         setTimeout(function(){
           usage("## Usage " + "<span id=\"u\"></span> \n <br>"+ data.use + " \n \n");
         },60);
@@ -124,6 +131,14 @@ inquirer
   }
   // Usage
   let usage =  (e) => {
+    fs.appendFile("schwyn.md", e, function (error) {
+      if (error) {
+        return console.log(error);
+      }
+      console.log("usage works");
+    });
+  }
+  let install =  (e) => {
     fs.appendFile("schwyn.md", e, function (error) {
       if (error) {
         return console.log(error);
