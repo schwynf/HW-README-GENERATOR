@@ -8,7 +8,7 @@ This is a command line interface application that generates a README.md file dep
  <ul><li><a href="#i">Installation</a></li><li><a href="#u">Usage</a></li><li><a href="#l">License</a></li><li><a href="#c">Contributing</a></li><li><a href="#t">Tests</a></li></ul> 
  
 ## Installation <span id="i"></span> 
-This is a command line application. To run application, use <code>npm install in terminal to download node_modules folder. After download, type node index.js in terminal to begin application. 
+This is a command line application. To run application, use npm install in terminal to download node_modules folder. After download, type node index.js in terminal to begin application. 
  
 ## Usage <span id="u"></span> 
 Creating a fast and organized README.md file. 
@@ -17,10 +17,10 @@ Creating a fast and organized README.md file.
 None 
  
 ## Contributing <span id="c"></span> 
-NO 
+No 
  
 ## Tests <span id="t"></span> 
-NO 
+No 
  
 ## Author Info 
  Email: schwynf@gmail.com<br>
