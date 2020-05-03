@@ -31,6 +31,14 @@ inquirer
     name: "install"
   },
   {
+    message: "Contributers?",
+    name: "contributer"
+  },
+  {
+    message: "Test?",
+    name: "test"
+  },
+  {
     type: "checkbox",
     message: "What kind of License should your project have?",
     name: "stack",
@@ -76,8 +84,14 @@ inquirer
           title("## License " + "<span id=\"l\"></span> \n"+ data.stack + " \n \n");
         },80);
         setTimeout(function(){
+          title("## Contributing " + "<span id=\"c\"></span> \n"+ data.contributer + " \n \n");
+        },90);
+        setTimeout(function(){
+          title("## Tests " + "<span id=\"t\"></span> \n"+ data.test + " \n \n");
+        },100);
+        setTimeout(function(){
           title("## Author Info \n Email: "+ obj.data[0].payload.commits[0].author.email + "<br>" + "\n Name: " + obj.data[0].payload.commits[0].author.name + "<br>" + "\n Profile Picture: <br> ![]("+obj.data[0].actor.avatar_url + ") \n \n");
-        },80);
+        },110);
       }
     }).catch((error) => {
       console.log(error)
