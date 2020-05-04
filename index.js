@@ -4,7 +4,7 @@ const axios = require("axios");
 
 // blank file
 let header = "";
-fs.writeFile("schwyn.md", header, function (error) {
+fs.writeFile("schwyn.md", header, (error) => {
   if (error) {
     return console.log(error);
   }
@@ -12,30 +12,30 @@ fs.writeFile("schwyn.md", header, function (error) {
 
 inquirer
   .prompt([{
-    message: "Enter your GitHub username",
+    message: "What is your GitHub username?",
     name: "username"
   }, {
-    message: "Repo Title",
+    message: "What is your project's name?",
     name: "repoTitle"
   },
   {
-    message: "Description of Repo",
+    message: "Write a short description of your project",
     name: "repoDescript"
   },
   {
-    message: "Usage",
+    message: "What does the user need to know about using the repo?",
     name: "use"
   },
   {
-    message: "Installation",
+    message: "What command should be run to install dependencies?",
     name: "install"
   },
   {
-    message: "Contributers?",
+    message: "What does the user need to know about contributing to the repo?",
     name: "contributer"
   },
   {
-    message: "Test?",
+    message: "What command should be run to run tests?",
     name: "test"
   },
   {
@@ -61,12 +61,12 @@ inquirer
       let username2;
       // if user name is  not found
       if (obj.data[0].payload.action === "started") {
-        console.log("Sorry I can't find your name and email using your Git Hub User Name");
+        console.log("Sorry I can't find your name and email using your GitHub username.");
         inquirer.prompt([{
-          message: "Full Name?",
+          message: "Please enter first and last name.",
           name: "username2"
         }, {
-          message: "email?",
+          message: "Please enter email address.",
           name: "email"
         }]).then((data2) => {
           username2 = data2.username2;
@@ -80,7 +80,7 @@ inquirer
       // console.log(JSON.stringify(obj.data[0].payload.commits[0].author.email));
       // console.log(obj.data[0].payload.commits[0].author.name);
       // console.log(obj.data[0].actor.avatar_url);
-      function start() {
+      function start () {
         header = "# " + data.repoTitle + "\n \n" + "![Repo Size](https://img.shields.io/github/repo-size/" + data.username + "/" + data.repoTitle +") <br> \n";
         title(header);
         setTimeout(() => {
@@ -120,7 +120,7 @@ inquirer
     })
   });
 
-// title
+// Appending sections to schwyn.md file
 let a= 0;
 let title = (header) => {
   fs.appendFile("schwyn.md", header, function (error) {
